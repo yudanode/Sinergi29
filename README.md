@@ -1,6 +1,6 @@
-# 🕌 Website Dinamis LDII Sumedang
+# 🕌 Website Dinamis Sinergi29 
 
-Website resmi organisasi LDII Sumedang untuk mengelola portofolio, berita, dan event secara dinamis.
+Website resmi organisasi untuk mengelola portofolio, berita, dan event secara dinamis.
 
 ---
 
