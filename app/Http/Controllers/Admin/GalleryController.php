@@ -3,23 +3,22 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\PortfolioFile;
+use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
     public function index()
     {
-        return view('admin.gallery.index');
+        $files = PortfolioFile::with('portfolio')->latest()->paginate(20);
+        return view('admin.gallery.index', compact('files'));
     }
-    public function create()
+
+    public function destroy(PortfolioFile $galeri)
     {
-        return view('admin.gallery.create');
+        Storage::disk('public')->delete($galeri->file_path);
+        $galeri->delete();
+
+        return back()->with('success', 'File berhasil dihapus.');
     }
-    public function store() {}
-    public function show($id) {}
-    public function edit($id)
-    {
-        return view('admin.gallery.edit');
-    }
-    public function update($id) {}
-    public function destroy($id) {}
 }
