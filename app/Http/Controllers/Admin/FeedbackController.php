@@ -3,12 +3,19 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Feedback;
 
 class FeedbackController extends Controller
 {
     public function index()
     {
-        return view('admin.feedback.index');
+        $feedbacks = Feedback::latest()->paginate(15);
+        return view('admin.feedback.index', compact('feedbacks'));
     }
-    public function destroy($id) {}
+
+    public function destroy(Feedback $feedback)
+    {
+        $feedback->delete();
+        return back()->with('success', 'Feedback berhasil dihapus.');
+    }
 }
