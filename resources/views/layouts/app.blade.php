@@ -54,10 +54,10 @@
 
                 {{-- Logo --}}
                 <a href="{{ route('home') }}" class="flex items-center gap-2">
-                    <div class="w-9 h-9 bg-white rounded-full flex items-center justify-center">
-                        <span class="text-primary-700 font-bold text-sm">LD</span>
+                    <div class="w-9 h-9  rounded-full flex items-center justify-center">
+                        <img src="{{ asset('images/logo.png') }}" alt="Logo LDII" class="w-9 h-9 rounded-full object-cover">
                     </div>
-                    <span class="text-white font-bold text-lg hidden sm:block">LDII Sumedang</span>
+                    <span class="text-white font-bold text-lg hidden sm:block">LDII PC Cibodas</span>
                 </a>
 
                 {{-- Menu Desktop --}}
@@ -130,7 +130,7 @@
         <div class="max-w-7xl mx-auto px-4 py-10">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="font-bold text-lg mb-3">LDII Sumedang</h3>
+                    <h3 class="font-bold text-lg mb-3">LDII PC Cibodas</h3>
                     <p class="text-primary-100 text-sm leading-relaxed">
                         Lembaga Dakwah Islam Indonesia Kabupaten Sumedang.
                         Bersama membangun umat yang berilmu dan berakhlak mulia.

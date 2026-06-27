@@ -7,7 +7,7 @@
 {{-- HERO --}}
 <section class="bg-primary-700 text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di<br>LDII Sumedang</h1>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di<br>LDII PC CIBODAS</h1>
         <p class="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
             Lembaga Dakwah Islam Indonesia Kabupaten Sumedang — Bersama membangun umat yang berilmu dan berakhlak mulia.
         </p>
